@@ -19,7 +19,8 @@ This consumes a million times less power than a traditional computer. This could
 currently training this computer to handle large language models and it will be interesting to see how it performs. 
 
 ## Medical Image Analysis: https://www.kaggle.com/code/modoucair/medical-image-analysis/notebook (created by Ndiaye)
-
+So now into the actual lesson. I am going to need everyone to create a kaggle account. https://www.kaggle.com/ Kaggle is one of the largest AI and machine learning 
+communities and they host their own challenges and even some courses related to data science. 
 
 ## Ethical issues with AI and tech in the medical field
 
