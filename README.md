@@ -31,7 +31,7 @@ tissue safe. It can account for someone breathing or a patient turning their hea
 around 45 minutes of 1-5 visits which is an improvement over current radiation therapies. 
 ### Paro Therapeutic Robot
 Ok this thing is honestly kinda cute (minus the fact that it's a robot). Do this little thing has been proven to reduce stress, improves relaxation, and is certified by Guinness World Records
-as the most therapeutic robot. It's capable of sensing light, voice, and touch. It acts like a pet pretty much. It's currently being used for those who have Dimentia and Alzheimer's. It will also 
+as the most therapeutic robot. It's capable of sensing light, voice, and touch. It acts like a pet pretty much. It's currently being used for those who have dementia and Alzheimer's. It will also 
 learn the patient's behavior and adjust accordingly. I don't know how I feel about that part but overall it's pretty cute and I like the idea. Well if you want one of these be ready to spend over $6,000.
 It also has been tested on a mars mission simulation to reduce stress. 
 
