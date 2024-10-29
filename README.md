@@ -18,20 +18,38 @@ super efficient. We have over 86 billion neurons and it's amazing what they are 
 This consumes a million times less power than a traditional computer. This could greatly reduce the environmental impact of classical computers. They are
 currently training this computer to handle large language models and it will be interesting to see how it performs. 
 
+## Robotic Surgery
+How many of you would feel comforatable having surgery done by a robot? 
+Advancements in robotics has improved healthcare greatly. Robotics can improve surgical outcomes, improve bedside care, and can even help in therapy. 
+### Intuitive da Vinci
+It's rated as one of the best surgical systems for minimally invasive surgery. It allows the surgeon to control the instruments with more accuracy and to be able to give a magnified view.
+There's more than 1,700 of these systems worldwide and this number keeps growing.It is primarily used for heart surgeries, general surgeries, and gynecologolical procedures and over 7 million procedures have been done.
+This robot has many benefits like less blood loss, smaller incisions, less pain, and fewer surgical complications. 
+### CyberKnife
+The CyberKnife is a non-invasive tumor treatment. It is a robot that can deliver percision radiation therapy which allows it to focus on the tumor while keeping the surrounding 
+tissue safe. It can account for someone breathing or a patient turning their head. It can determine where the tumor is and then focus on it while it is giving treatment. Treatment takes 
+around 45 minutes of 1-5 visits which is an improvement over current radiation therapies. 
+### Paro Therapeutic Robot
+Ok this thing is honestly kinda cute (minus the fact that it's a robot). Do this little thing has been proven to reduce stress, improves relaxation, and is certified by Guinness World Records
+as the most therapeutic robot. It's capable of sensing light, voice, and touch. It acts like a pet pretty much. It's currently being used for those who have Dimentia and Alzheimer's. It will also 
+learn the patient's behavior and adjust accordingly. I don't know how I feel about that part but overall it's pretty cute and I like the idea. Well if you want one of these be ready to spend over $6,000.
+It also has been tested on a mars mission simulation to reduce stress. 
+
 ## Brain Tumor Analysis: Notebook by: Zeeshan Latif https://www.kaggle.com/code/zeeshanlatif/brain-tumor-segmentation-using-u-net/notebook
 So now into the actual lesson. I am going to need everyone to create a kaggle account. https://www.kaggle.com/ Kaggle is one of the largest AI and machine learning 
 communities and they host their own challenges and even some courses related to data science. So pretty much with the advancements of technology the medical Field
 is now adopting AI, ML, and quantum computing methods in order to solve different medical and scientific issues. So in this case we will be using U-net.
 It's a convolutional neural network which is primarily used for image segmentation. So we are using this since it requires fewer training images. 
-This is actually used quite a bit in medical research since it can be useful in identifying brain tumors. So first we need to pre-process the data. 
-It's a bunch of brain MRI scans. So I'm not going to cover the data pre-processing steps. So as we go through this analysis I want you to keep in mind 
+This is actually used quite a bit in medical research since it can be useful in identifying brain tumors. So first we need to pre-process the data. It's a bunch of brain MRI scans. So I'm not going to cover the data pre-processing steps. So as we go through this analysis I want you to keep in mind 
 4 different modulalities that help us identify brain tumors. T1 is used to find tissue structure. T1ce is used to help identify abnormalities. T2 helps visualize
 fluid content and FLAIR makes it easier to find lesions specifically in the white matter. In this case we are only interested in T1ce and FLAIR. 
+
 So in the brain we need to keep in mind the 3 planes. Transverse, Coronal, and Sagittal planes. Tranverse divides the brain horizontally. Coronal divides it into front and back.
 Sagittal divides the brain into left and right. Each plane can give us a different insight into the brain and it's functions. So the next part will show the brain in each of these views. 
 We can see where the tumor is. We will look at the sagittal view first. We can see an entire range of the brain in quite a few different slices. Well that's a lot of slices, we can reduce this so we only keep the 
 ones that we are interested in. From this we can identify where the tumor is, what it looks like, how the surrounding tissue is impacted. From this we can isolate the tumor. 
 We can categorize the different parts into classes. class 0 which is not a tumor, class 1 which is a non-enhancing tumor (lacks iodine), class 2 which is an edema (swelling due to fluid buildup), class 4 which is an enhancing tumor (the actual tumor).
+
 So now we need to split the data set. So 70ish percent will be used for training, about 15 percent for the validation set and another 15 percent for the final testing set. So now we can get started on training the neural network. We will need the raw data and 
 the ground truth which is what the model is attempting to simulate. So again I'm gonna skip over the preprocessing. Let's say there's a ton of steps but pretty much we wanted to avoid overloading the neural network, narrowed down our training data and shaped it so
 it can be used in our analysis. So we wanted to select a single slice and be able to view it using the FLAIR, T1ce, and the colored segmentation views. So while we are training the model we need to keep in mind the loss function. This is pretty much a formula that allows us to 
@@ -46,6 +64,9 @@ The History of Technology: https://en.wikipedia.org/wiki/History_of_technology#:
 The History of Medicine: https://en.wikipedia.org/wiki/History_of_medicine
 Bread AI: https://www.newyorker.com/tech/annals-of-technology/the-pastry-ai-that-learned-to-fight-cancer
 Biocomputer: https://www.sciencealert.com/swiss-startup-connects-16-human-mini-brains-to-create-low-energy-biocomputer and https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2024.1376042/full
-Ethics in the healthcare field and technology: https://pmc.ncbi.nlm.nih.gov/articles/PMC7612237/
+Intuitive Da Vinci Robot: https://www.intuitive.com/en-us/products-and-services/da-vinci
+Paro: http://www.parorobots.com/
+CyberKnife: https://cyberknife.com/
+
 
 
