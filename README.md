@@ -40,12 +40,12 @@ We will be using the 2D version since it's faster and easier to work with for la
 The second graph is the loss graph which shows the loss decreases over time. I don't personally care about the right 2 graphs. Now we can use our model to analyze the rest of the brain scans. We can see the different classes being predicted and I think it did a good job. 
 Let's try another slice. Still fairly good. 
 
-## Ethical issues with AI and tech in the medical field
 
 ## Resources
 The History of Technology: https://en.wikipedia.org/wiki/History_of_technology#:~:text=In%20navigation%2C%20the%20foundation%20to,armour%2C%20steel%20crossbows%20and%20cannon.
 The History of Medicine: https://en.wikipedia.org/wiki/History_of_medicine
 Bread AI: https://www.newyorker.com/tech/annals-of-technology/the-pastry-ai-that-learned-to-fight-cancer
 Biocomputer: https://www.sciencealert.com/swiss-startup-connects-16-human-mini-brains-to-create-low-energy-biocomputer and https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2024.1376042/full
+Ethics in the healthcare field and technology: https://pmc.ncbi.nlm.nih.gov/articles/PMC7612237/
 
 
