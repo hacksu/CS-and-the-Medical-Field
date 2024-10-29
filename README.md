@@ -18,9 +18,27 @@ super efficient. We have over 86 billion neurons and it's amazing what they are 
 This consumes a million times less power than a traditional computer. This could greatly reduce the environmental impact of classical computers. They are
 currently training this computer to handle large language models and it will be interesting to see how it performs. 
 
-## Medical Image Analysis: https://www.kaggle.com/code/modoucair/medical-image-analysis/notebook (created by Ndiaye)
+## Brain Tumor Analysis: Notebook by: Zeeshan Latif https://www.kaggle.com/code/zeeshanlatif/brain-tumor-segmentation-using-u-net/notebook
 So now into the actual lesson. I am going to need everyone to create a kaggle account. https://www.kaggle.com/ Kaggle is one of the largest AI and machine learning 
-communities and they host their own challenges and even some courses related to data science. 
+communities and they host their own challenges and even some courses related to data science. So pretty much with the advancements of technology the medical Field
+is now adopting AI, ML, and quantum computing methods in order to solve different medical and scientific issues. So in this case we will be using U-net.
+It's a convolutional neural network which is primarily used for image segmentation. So we are using this since it requires fewer training images. 
+This is actually used quite a bit in medical research since it can be useful in identifying brain tumors. So first we need to pre-process the data. 
+It's a bunch of brain MRI scans. So I'm not going to cover the data pre-processing steps. So as we go through this analysis I want you to keep in mind 
+4 different modulalities that help us identify brain tumors. T1 is used to find tissue structure. T1ce is used to help identify abnormalities. T2 helps visualize
+fluid content and FLAIR makes it easier to find lesions specifically in the white matter. In this case we are only interested in T1ce and FLAIR. 
+So in the brain we need to keep in mind the 3 planes. Transverse, Coronal, and Sagittal planes. Tranverse divides the brain horizontally. Coronal divides it into front and back.
+Sagittal divides the brain into left and right. Each plane can give us a different insight into the brain and it's functions. So the next part will show the brain in each of these views. 
+We can see where the tumor is. We will look at the sagittal view first. We can see an entire range of the brain in quite a few different slices. Well that's a lot of slices, we can reduce this so we only keep the 
+ones that we are interested in. From this we can identify where the tumor is, what it looks like, how the surrounding tissue is impacted. From this we can isolate the tumor. 
+We can categorize the different parts into classes. class 0 which is not a tumor, class 1 which is a non-enhancing tumor (lacks iodine), class 2 which is an edema (swelling due to fluid buildup), class 4 which is an enhancing tumor (the actual tumor).
+So now we need to split the data set. So 70ish percent will be used for training, about 15 percent for the validation set and another 15 percent for the final testing set. So now we can get started on training the neural network. We will need the raw data and 
+the ground truth which is what the model is attempting to simulate. So again I'm gonna skip over the preprocessing. Let's say there's a ton of steps but pretty much we wanted to avoid overloading the neural network, narrowed down our training data and shaped it so
+it can be used in our analysis. So we wanted to select a single slice and be able to view it using the FLAIR, T1ce, and the colored segmentation views. So while we are training the model we need to keep in mind the loss function. This is pretty much a formula that allows us to 
+see how well a model is performing. So more specifically we will be using the Dice loss function which allows us to see the overlap of the predicted and actual segmentation. So back to the U-net stuff. We want to be able to segment small regions and this is perfect for what we are doing. 
+We will be using the 2D version since it's faster and easier to work with for larger datasets. Now we can train our model. After it's done running we can see the different metrics in order to see how it's doing. the 1st graph shows that accuracy increases over time which is what we hope to see.
+The second graph is the loss graph which shows the loss decreases over time. I don't personally care about the right 2 graphs. Now we can use our model to analyze the rest of the brain scans. We can see the different classes being predicted and I think it did a good job. 
+Let's try another slice. Still fairly good. 
 
 ## Ethical issues with AI and tech in the medical field
 
